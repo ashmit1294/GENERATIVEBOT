@@ -8,7 +8,6 @@ async function run(prompt) {
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = await response.text();
-
     return { text, status: 200 }; 
   } catch (error) {
     console.error(error);
