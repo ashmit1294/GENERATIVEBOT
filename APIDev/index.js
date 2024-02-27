@@ -1,7 +1,8 @@
 const { run } = require('./generativeAi');
 const express = require('express')
 const app = express();
-
+const cors = require('cors');
+app.use(cors());
 app.get('/', async (req, res) => {
   let prompt = req.query.query;
 
