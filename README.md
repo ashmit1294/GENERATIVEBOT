@@ -1,4 +1,4 @@
-```markdown
+
 # SmartGirlFriend
 
 A Google Gemini crawler powered by React and Vite, showcasing AI-generated responses.
@@ -29,8 +29,7 @@ The **SmartGirlFriend** application is designed to explore the concept of a Goog
 Follow these simple instructions to get started with our app:
 
 1. Clone the repository:
-
-   ```bash
+```markdown
    git clone https://github.com/ashmit1294/GENERATIVEBOT/tree/main/smartGirlFriend
    cd smartGirlFriend
    ```
