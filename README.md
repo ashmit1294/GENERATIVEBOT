@@ -72,7 +72,7 @@ Then deploy the contents of the `dist` folder to your preferred hosting provider
 
 ## Contact Us
 
-Feel free to reach out to us at ashmit1294@gmail.com with any questions or feedback regarding the project.
+Feel free to reach out to us at ashmit.nigam1294@gmail.com with any questions or feedback regarding the project.
 
 Remember to star the repository if you enjoy the project and want to stay informed about updates!
 ```
