@@ -1,8 +1,6 @@
 ```markdown
 # SmartGirlFriend
 
-![Screenshot of smartGirlFriend](assets/screenshot.png)
-
 A Google Gemini crawler powered by React and Vite, showcasing AI-generated responses.
 
 ## Table of Contents
@@ -17,7 +15,7 @@ A Google Gemini crawler powered by React and Vite, showcasing AI-generated respo
 
 ## About
 
-The **smartGirlFriend** application is designed to explore the concept of a Google Gemini crawler utilizing modern web technologies. It leverages React and Vite to deliver a responsive user interface while fetching and displaying AI-generated responses.
+The **SmartGirlFriend** application is designed to explore the concept of a Google Gemini crawler utilizing modern web technologies. It leverages React and Vite to deliver a responsive user interface while fetching and displaying AI-generated responses.
 
 ## Features
 
