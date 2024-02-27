@@ -30,7 +30,6 @@ Follow these simple instructions to get started with our app:
 
 1. Clone the repository:
 ```markdown
-   ```bash
    git clone https://github.com/ashmit1294/GENERATIVEBOT/tree/main/smartGirlFriend
    cd smartGirlFriend
    ```
