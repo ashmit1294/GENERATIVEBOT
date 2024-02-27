@@ -5,7 +5,7 @@ const chatBox = () => {
   return (
     <div className="bg-white shadow-md rounded-lg max-w-lg w-full fixed right-10 bottom-10 m-4">
         <div className="p-4 border-b bg-blue-500 text-white rounded-t-lg flex justify-between items-center">
-            <p className="text-lg font-semibold">Admin Bot</p>
+            <p className="text-lg font-semibold">Sheila</p>
          </div>
          <ChatContainer />
          <div className="p-4 border-t flex">
@@ -16,4 +16,4 @@ const chatBox = () => {
   )
 }
 
-export default chatBox
+export default chatBox;
