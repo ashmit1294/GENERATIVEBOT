@@ -9,20 +9,21 @@ const ChatBox = () => {
 
   const handleResponse = async () => {
     try {
-      const queryUrl = Query_URL + texts;
+      const data=texts;
+      setTexts("");
+      const queryUrl = Query_URL + data;
       const resp = await fetch(queryUrl);
       const jsonData = await resp.json();
       const { text, status } = jsonData;
-
       const message = status === 200 ? text : "I didn't find anything! Try something else!";
-      const newChat = { [texts]: message };
+      const newChat = { [data]: message };
 
       setChats([...chats, newChat]);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
 
-    setTexts("");
+    
   };
 
   return (
@@ -40,6 +41,11 @@ const ChatBox = () => {
           className="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           onChange={(e) => setTexts(e.target.value)}
           value={texts}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleResponse();
+            }
+          }}
         />
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 transition duration-300"
