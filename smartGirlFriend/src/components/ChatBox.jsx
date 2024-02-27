@@ -10,20 +10,21 @@ const chatBox = () => {
   },
 ];
 const [chats,setChats]=useState(conversation); 
-const [text,setText]=useState("");
-const handleInput=()=>{
+const [texts,setTexts]=useState("");
 
-} 
 const handleSend= () =>{
 
 };
 const handleResponse= async ()=>{
-  let queryUrl=Query_URL+"hi";
-
+  let queryUrl=Query_URL+texts;
   const resp=await fetch(queryUrl);
   const jsonData=await resp.json();
-  console.log(jsonData)
-
+  const {text,status}=jsonData;
+  let obj={
+    [texts] : text,
+  }
+  console.log(obj);
+  setChats([...chats,obj]);
 }
   return (
     <div className="bg-white shadow-md rounded-lg max-w-lg w-full fixed right-10 bottom-10 m-4">
@@ -37,6 +38,8 @@ const handleResponse= async ()=>{
             type="text" 
             placeholder="Type a message" 
             className="w-full px-3 py-2 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+            onChange={(e)=>setTexts(e.target.value)}
+            text={texts}
             />
             <button 
             className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600 transition duration-300"
