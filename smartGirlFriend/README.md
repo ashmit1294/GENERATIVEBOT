@@ -1,7 +1,5 @@
-I cannot directly create a README file for you, but I can provide a structured outline and suggestions based on best practices and examples found online. Please find a sample layout below:
-
 ```markdown
-# smartGirlFriend
+# SmartGirlFriend
 
 ![Screenshot of smartGirlFriend](assets/screenshot.png)
 
