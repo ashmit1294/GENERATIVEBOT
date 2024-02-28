@@ -12,6 +12,7 @@ A Google Gemini crawler powered by React and Vite, showcasing AI-generated respo
 - [Deployment Instructions](#deployment-instructions)
 - [Technologies Used](#technologies-used)
 - [Contact Us](#contact-us)
+![alt text](image.png)
 
 ## About
 
