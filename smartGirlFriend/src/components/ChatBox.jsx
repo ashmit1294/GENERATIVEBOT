@@ -11,8 +11,7 @@ const ChatBox = () => {
     try {
       const data = texts;
       setTexts("");
-
-      setChats((prevChat) => [...prevChat, { [data]: "" }]);
+      setChats((prevChat) => [...prevChat, { [data]: "..." }]);
 
       const queryUrl = Query_URL + data;
       const resp = await fetch(queryUrl);

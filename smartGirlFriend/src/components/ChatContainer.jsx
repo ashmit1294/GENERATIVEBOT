@@ -1,6 +1,6 @@
 import React from "react";
 import Query from "./Query";
-import Response from "./response";
+import Response from "./Response";
 
 const ChatContainer = ({ conversation }) => {
   return (

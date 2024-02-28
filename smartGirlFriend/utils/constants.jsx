@@ -1,1 +1,1 @@
-export const Query_URL="http://192.168.1.2:8082?query=";
+export const Query_URL="http://localhost:8082?query=";
